@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimscapeMultibodyImportXML xmlns="urn:mathworks:SimscapeMultibody:import"
+                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            version="2.0">
+   <Created by="Kyle Jeffrey" from="Onshape" on="02/09/21||21:00:19"
+            using="Simscape Multibody Exporter"/>
+   <ModelUnits length="meter" mass="kilogram"/>
+   <DataUnits length="meter" mass="kilogram"/>
+   <RootAssembly name="Slide Leg Design v1" uid="24ac5e618e790b4c19b55dae"
+                 version="w-cf9565645fd0412dc216f050">
+      <InstanceTree>
+         <Instance entityUid="JFP*:*480ab487e57df51ef9248a15" grounded="true" name="Base &lt;1&gt;"
+                   uid="M7tFs4VlPdgcYcPDN">
+            <Transform>
+               <Rotation>0.999994542 -0.000000000 -0.003304071 -0.003304071 -0.000000000 -0.999994542 0.000000000 1.000000000 -0.000000000 </Rotation>
+               <Translation>-0.000138628 0.016574277 0.005585264 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JFL*:*480ab487e57df51ef9248a15" name="Slider &lt;1&gt;"
+                   uid="MVtoq5MmTTgdI0fBK">
+            <Transform>
+               <Rotation>0.999994542 -0.000000000 -0.003304071 -0.003304071 0.000000000 -0.999994542 0.000000000 1.000000000 -0.000000000 </Rotation>
+               <Translation>-0.001307556 0.016578139 0.005585264 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JFD*:*480ab487e57df51ef9248a15" name="Arm &lt;1&gt;"
+                   uid="Mgpm1drhhcbi9/EnA">
+            <Transform>
+               <Rotation>0.999466109 0.032505078 -0.003304071 -0.003302325 -0.000107400 -0.999994542 -0.032505256 0.999471565 -0.000000000 </Rotation>
+               <Translation>-0.000232840 0.017574594 0.005586849 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JFH*:*480ab487e57df51ef9248a15" name="Leg &lt;1&gt;"
+                   uid="Me/JkwFyUJcCwpxFc">
+            <Transform>
+               <Rotation>0.999994542 -0.000000000 -0.003304071 -0.003304071 0.000000000 -0.999994542 0.000000000 1.000000000 -0.000000000 </Rotation>
+               <Translation>-0.003590709 0.015693165 0.008298056 </Translation>
+            </Transform>
+         </Instance>
+      </InstanceTree>
+      <Constraints/>
+      <Joints>
+         <Prismatic name="Slider1">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>M7tFs4VlPdgcYcPDN</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>0.000000000 0.000000000 1.000000000 1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.014000000 -0.024000000 0.012750000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MVtoq5MmTTgdI0fBK</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>0.000000000 0.000000000 1.000000000 1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.014000000 -0.024000000 0.012750000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Prismatic>
+         <Revolute name="Revolute1">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>M7tFs4VlPdgcYcPDN</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 0.000000000 -1.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 </Rotation>
+                  <Translation>0.000000000 0.003000000 0.020000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>Mgpm1drhhcbi9/EnA</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 0.000000000 -0.000000000 -1.000000000 </Rotation>
+                  <Translation>0.000000000 0.003000000 0.021000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <PinSlot name="PinSlot1">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>Mgpm1drhhcbi9/EnA</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 0.000000000 -1.000000000 0.000000000 0.000000000 -0.000000000 -1.000000000 </Rotation>
+                  <Translation>0.016000000 0.003000000 0.025000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>Me/JkwFyUJcCwpxFc</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 -0.000000000 -1.000000000 -0.000000000 -0.000000000 0.000000000 -1.000000000 </Rotation>
+                  <Translation>0.012280216 0.000000000 0.023107486 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </PinSlot>
+         <Prismatic name="Slider2">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MVtoq5MmTTgdI0fBK</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 -0.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.010000000 -0.027000000 0.024000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>Me/JkwFyUJcCwpxFc</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 -0.000000000 0.000000000 -1.000000000 0.000000000 1.000000000 0.000000000 </Rotation>
+                  <Translation>0.012280216 -0.077000000 0.023107486 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Prismatic>
+      </Joints>
+   </RootAssembly>
+   <Assemblies/>
+   <Parts>
+      <Part name="Arm" uid="JFD*:*480ab487e57df51ef9248a15">
+         <ModelUnits length="meter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.000637493647</Mass>
+            <CenterOfMass>0.003346011 0.003000000 0.015891845 </CenterOfMass>
+            <Inertia>0.000000055 0.000000076 0.000000025 0.000000000 -0.000000015 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Arm.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.400000000" g="0.376470588" r="0.349019608"/>
+            <Diffuse a="1.000000000" b="0.400000000" g="0.376470588" r="0.349019608"/>
+            <Specular a="1.000000000" b="0.400000000" g="0.376470588" r="0.349019608"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Leg" uid="JFH*:*480ab487e57df51ef9248a15">
+         <ModelUnits length="meter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.00167864492</Mass>
+            <CenterOfMass>0.012280216 -0.033158487 0.023785087 </CenterOfMass>
+            <Inertia>0.000001034 0.000000022 0.000001020 0.000000053 0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Leg.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Slider" uid="JFL*:*480ab487e57df51ef9248a15">
+         <ModelUnits length="meter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.000778149994</Mass>
+            <CenterOfMass>0.010000000 -0.024000000 0.021838800 </CenterOfMass>
+            <Inertia>0.000000031 0.000000033 0.000000007 0.000000000 0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Slider.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Base" uid="JFP*:*480ab487e57df51ef9248a15">
+         <ModelUnits length="meter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.017912345</Mass>
+            <CenterOfMass>0.000000000 -0.007650024 0.009003414 </CenterOfMass>
+            <Inertia>0.000003800 0.000001637 0.000004285 -0.000000008 -0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Base1.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+   </Parts>
+</SimscapeMultibodyImportXML>

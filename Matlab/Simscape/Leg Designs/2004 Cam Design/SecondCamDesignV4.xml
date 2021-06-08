@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimscapeMultibodyImportXML xmlns="urn:mathworks:SimscapeMultibody:import"
+                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            version="2.0">
+   <Created by="Kyle Jeffrey" from="Onshape" on="03/01/21||18:15:53"
+            using="Simscape Multibody Exporter"/>
+   <ModelUnits length="meter" mass="kilogram"/>
+   <DataUnits length="meter" mass="kilogram"/>
+   <RootAssembly name="Second Cam Design v4" uid="88debaffc1af7d510bb8f13a"
+                 version="w-406f5b4af62914658607882e">
+      <InstanceTree>
+         <Instance entityUid="JFD*:*4302f9d1266cc54e5710dce0" name="Leg &lt;1&gt;"
+                   uid="MqdgqTIkWBFugKydn">
+            <Transform>
+               <Rotation>-0.992868329 -0.119216109 -0.000000000 0.119216109 -0.992868329 0.000000000 -0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>0.001483705 -0.000178152 -0.000000001 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JFH*:*4302f9d1266cc54e5710dce0" name="Rotar (1) &lt;1&gt;"
+                   uid="MGXKwdHZrMJxynwCV">
+            <Transform>
+               <Rotation>0.992868329 0.119216109 -0.000000000 -0.119216109 0.992868329 -0.000000000 -0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>0.000000000 0.000000000 -0.000000000 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JFL*:*4302f9d1266cc54e5710dce0" grounded="true" name="Cam  &lt;1&gt;"
+                   uid="Mxwzz2eNMv4JyFafR">
+            <Transform>
+               <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>0.000000000 0.000000000 0.000000000 </Translation>
+            </Transform>
+         </Instance>
+      </InstanceTree>
+      <Constraints/>
+      <Joints>
+         <Prismatic name="Slider1">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MGXKwdHZrMJxynwCV</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>-0.000000000 0.000000000 1.000000000 -1.000000000 0.000000000 0.000000000 -0.000000000 -1.000000000 0.000000000 </Rotation>
+                  <Translation>0.010000000 0.000000000 0.035000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MqdgqTIkWBFugKydn</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>0.000000000 0.000000000 -1.000000000 1.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 </Rotation>
+                  <Translation>-0.060000000 0.000000000 0.035000001 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Prismatic>
+         <Revolute name="Revolute1">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>Mxwzz2eNMv4JyFafR</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 -0.000000000 0.000000000 -1.000000000 -0.000000000 0.000000000 0.000000000 -1.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 0.000000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MGXKwdHZrMJxynwCV</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 0.000000000 0.000000000 0.000000000 -1.000000000 </Rotation>
+                  <Translation>0.000000000 0.000000000 0.000000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+      </Joints>
+   </RootAssembly>
+   <Assemblies/>
+   <Parts>
+      <Part name="Leg" uid="JFD*:*4302f9d1266cc54e5710dce0">
+         <ModelUnits length="meter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.0119829361</Mass>
+            <CenterOfMass>-0.000000000 -0.000000000 0.034120245 </CenterOfMass>
+            <Inertia>0.000000336 0.000014099 0.000013932 0.000000000 0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Leg.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Rotar (1)" uid="JFH*:*4302f9d1266cc54e5710dce0">
+         <ModelUnits length="meter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.00742693346</Mass>
+            <CenterOfMass>-0.000000000 0.000000000 0.030015966 </CenterOfMass>
+            <Inertia>0.000001342 0.000001304 0.000000420 0.000000000 0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Rotar (1).step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Cam " uid="JFL*:*4302f9d1266cc54e5710dce0">
+         <ModelUnits length="meter" mass="kilogram"/>
+         <MassProperties>
+            <Mass>0.120636386</Mass>
+            <CenterOfMass>0.000000488 0.001531990 0.011820743 </CenterOfMass>
+            <Inertia>0.000061851 0.000057250 0.000106373 -0.000000007 -0.000000000 0.000000002 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Cam .step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Diffuse a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Specular a="1.000000000" b="0.627450980" g="0.627450980" r="0.627450980"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+   </Parts>
+</SimscapeMultibodyImportXML>
